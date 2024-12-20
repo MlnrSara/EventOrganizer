@@ -11,6 +11,7 @@
        <select th:field="${eventTag.tag}">
            <option th:each="tag : ${tags}" th:value="${tag.id}" th:text="${tag.name}"></option>
        </select>
+        <span th:errors="${eventTag}" class="error"></span>
     </div>
     <input type="submit" class = "btn btn-success" value="Add Tag">
 </form>
